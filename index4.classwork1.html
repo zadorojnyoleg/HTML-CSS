@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+        / / background: yellow;
+        }
+
+        .a {
+            background: silver;
+            width: 800px;
+            height: 100px;
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b {
+            background: #2cc478;
+            width: 600px;
+            height: 100px;
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .triple {
+            background: darkred;
+            width: 600px;
+        / / height: 100 px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one {
+            background: violet;
+            width: 200px;
+            height: 100px;
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .f {
+            background: #11e5e5;
+            width: 200px;
+            height: 200px;
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .four {
+            display: flex;
+        / / justify-content: center;
+        / / align-items: center;
+            flex-direction: row;
+        }
+
+        .all {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="a">A</div>
+    <div class="four">
+        <div class="all">
+            <div class="b">B</div>
+            <div class="triple">
+                <div class="one">C</div>
+                <div class="one">D</div>
+                <div class="one">E</div>
+            </div>
+        </div>
+        <div class="f">F</div>
+    </div>
+</div>
+
+
+</body>
+</html>
