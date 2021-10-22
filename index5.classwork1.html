@@ -6,8 +6,84 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .one {
+            background: #beb6b6;
+            width: 1600px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .two {
+            background: #1c1f46;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .three {
+            background: #beb6b6;
+            width: 1600px;
+            height: 100px;
+        }
+        .oneone {
+            width: 250px;
+            height: 250px;
+            background: #1c1f46;
+            margin: 50px;
+            border-radius: 10%
+        }
+        .twotwo {
+            width: 250px;
+            height: 250px;
+            background: #beb6b6;
+            margin: 50px;
+            border-radius: 50%
+        }
+        .mainbottom {
+            background: #1c1f46;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            border: 5px solid #1baaf8;
+
+            //flex-direction: column;
+            //justify-content: center;
+            //flex-direction: column;
+        }
+        .text {
+            color: white;
+            justify-content: end;
+            align-items: end;
+            text-align: end;
+            vertical-align: bottom;
+        }
+    </style>
 </head>
 <body>
+    <div class="one">
+        <div class="oneone"></div>
+        <div class="oneone"></div>
+        <div class="oneone"></div>
+        <div class="oneone"></div>
+    </div>
 
+    <div class="two">
+        <div class="twotwo"></div>
+
+        <div class="mainbottom">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            </div>
+
+        <div class="twotwo"></div>
+    </div>
+    <div class="three"></div>
 </body>
 </html>

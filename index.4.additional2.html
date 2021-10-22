@@ -20,8 +20,9 @@
         border: 5px black solid;
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
     .two {
         width: 200px;
@@ -31,8 +32,9 @@
         border: 5px black solid;
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        flex-direction: column;
     }
     .three {
         width: 650px;
@@ -44,6 +46,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .four {
         width: 650px;
@@ -65,7 +68,7 @@
         box-sizing: border-box;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
     .six {
         width: 190px;
@@ -75,8 +78,9 @@
         border: 5px black solid;
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        flex-direction: column;
     }
     .seven {
         width: 650px;
@@ -109,25 +113,131 @@
         display: flex;
         flex-direction: row;
     }
-
+    .threebox {
+        width: 630px;
+        height: 230px;
+        background: royalblue;
+    }
+    .twobox {
+        width: 180px;
+        height: 50px;
+        background: royalblue;
+        margin: 5px;
+    }
+    .onebox {
+        width: 150px;
+        height: 50px;
+        background: royalblue;
+        margin: 5px;
+    }
+    .fourbox {
+        width: 145px;
+        height: 100px;
+        background: royalblue;
+        margin: 5px;
+    }
+    .sixbox {
+        width: 150px;
+        height: 75px;
+        background: royalblue;
+        margin: 10px;
+    }
+    .fivebox {
+        width: 150px;
+        height: 60px;
+        background: royalblue;
+        margin: 10px;
+    }
+    .fiveboxone {
+        display: flex;
+        flex-direction: column;
+    }
+        .fiveboxtwo {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            width: 150px;
+            height: 25px;
+            background: royalblue;
+            margin: 10px;
+        }
+        .fiveboxthree {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .howmuch {
+            display: flex;
+            flex-direction: row;
+        }
     </style>
 </head>
 <body>
 
-    <div class="one">1</div>
+    <div class="one">
+        <div class="onebox"></div>
+        <div class="onebox"></div>
+    </div>
 
     <div id="fivesixthreefourseventwo">
-    <div class="two">2</div>
+    <div class="two">
+        <div class="twobox"></div>
+        <div class="twobox"></div>
+        <div class="twobox"></div>
+        <div class="twobox"></div>
+        <div class="twobox"></div>
+        <div class="twobox"></div>
+    </div>
+
 
 <div id="fivesixthreefourseven">
     <div id="fivesixthreefour">
         <div id="threefour">
-            <div class="three">3</div>
-            <div class="four">4</div>
+            <div class="three">
+                <div class="threebox"></div>
+            </div>
+            <div class="four">
+                <div class="fourbox"></div>
+                <div class="fourbox"></div>
+                <div class="fourbox"></div>
+                <div class="fourbox"></div>
+            </div>
         </div>
         <div id="fivesix">
-            <div class="five">5</div>
-            <div class="six">6</div>
+            <div class="five">
+
+                <div class="fiveboxthree">
+                    <div class="howmuch">
+                <div class="fiveboxone">
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                </div>
+
+                <div class="fiveboxone">
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                <div class="fivebox"></div>
+                </div>
+                    </div>
+                <div class="fiveboxtwo"></div>
+                </div>
+
+
+            </div>
+            <div class="six">
+                <div class="sixbox"></div>
+                <div class="sixbox"></div>
+                <div class="sixbox"></div>
+                <div class="sixbox"></div>
+            </div>
         </div>
     </div>
     <div class="seven">7</div>
