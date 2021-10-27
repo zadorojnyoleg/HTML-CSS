@@ -11,60 +11,51 @@
             width: 1180px;
             height: 1000px;
             background: #37ff00;
-            display: flex;
-            flex-direction: column;
         }
-
         #menu {
             width: 300px;
             height: 600px;
             background: hotpink;
-            font-size: 30px;
         }
-
         .post {
             width: 880px;
             height: 300px;
             background: rebeccapurple;
-            font-size: 30px;
         }
-
         #footer {
-            width: 1180px;
-            height: 200px;
             background: #cdce82;
-            font-size: 30px;
         }
-
         #header {
+            background: #88c05c;
+        }
+        .width_height {
             width: 1180px;
             height: 200px;
-            background: #88c05c;
-            font-size: 30px;
         }
-
         .postmain {
             display: flex;
             flex-direction: column;
         }
-
         .menupost {
             display: flex;
             flex-direction: row;
         }
+        .font {
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
-<div class="wrap">
-    <div id="header">header</div>
+<div class="wrap postmain">
+    <div id="header" class="font width_height">header</div>
     <div class="menupost">
-        <div id="menu">menu</div>
+        <div id="menu" class="font">menu</div>
         <div class="postmain">
-            <div class="post">post</div>
-            <div class="post">post</div>
+            <div class="post font">post</div>
+            <div class="post font">post</div>
         </div>
     </div>
-    <div id="footer">footer</div>
+    <div id="footer" class="font width_height">footer</div>
 </div>
 </body>
 </html>

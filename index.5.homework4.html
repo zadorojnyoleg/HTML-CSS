@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .a {
+            background: silver;
+            width: 800px;
+            height: 100px;
+        }
+        .b {
+            background: #2cc478;
+        }
+        .triple {
+            background: darkred;
+        }
+        .one {
+            background: violet;
+        }
+        .f {
+            background: #11e5e5;
+            width: 200px;
+        }
+        .border {
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .all {
+            display: flex;
+            flex-direction: column;
+        }
+        .fl-rw {
+            display: flex;
+            flex-direction: row;
+        }
+        .wdt-hght {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a border">A</div>
+    <div class="fl-rw">
+        <div class="all">
+            <div class="fl-rw">
+                <div class="b border wdt-hght">B</div>
+                <div class="b border wdt-hght">B</div>
+                <div class="b border wdt-hght">B</div>
+            </div>
+            <div class="triple fl-rw">
+                <div class="one border wdt-hght">C</div>
+                <div class="one border wdt-hght">D</div>
+                <div class="one border wdt-hght">E</div>
+            </div>
+        </div>
+        <div class="f border">F</div>
+    </div>
+</body>
+</html>

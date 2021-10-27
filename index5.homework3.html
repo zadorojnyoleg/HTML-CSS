@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .a {
+            background: silver;
+            width: 800px;
+        }
+
+        .b {
+            background: #2cc478;
+        }
+
+        .triple {
+            background: darkred;
+        }
+
+        .one {
+            background: violet;
+        }
+
+        .f {
+            background: #11e5e5;
+        }
+
+        .add {
+            border: black 5px solid;
+            box-sizing: border-box;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flx_rw {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hght {
+            height: 100px;
+        }
+
+        .wd600 {
+            width: 600px;
+        }
+
+        .wd200 {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="a add hght">A</div>
+<div class="flx_rw">
+    <div>
+        <div class="b add hght wd600">B</div>
+        <div class="triple flx_rw hght wd600">
+            <div class="one add hght wd200">C</div>
+            <div class="one add hght wd200">D</div>
+            <div class="one add hght wd200">E</div>
+        </div>
+    </div>
+    <div class="f add wd200">F</div>
+</div>
+</body>
+</html>
