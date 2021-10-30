@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile-version</title>
+    <style>
+        /* first part */
+        .first {
+            background: #76ceff;
+            width: 1450px;
+            height: 100px;
+            display: flex;
+            justify-content: flex-end; /* Разница между end и flex-end */
+            align-items: center;
+            column-gap: 50px;
+            padding-right: 150px;
+        }
+
+        .second {
+            background: #ced3d3;
+            width: 1300px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 150px;
+            padding-left: 150px;
+        }
+
+        .third {
+            background: #76ceff;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .firsticon {
+            width: 100px;
+            height: 20px;
+            background: #1c1f46;
+            border: 5px solid #1c1f46;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        .secondicon {
+            width: 150px;
+            height: 30px;
+            background: #1c1f46;
+            border: 5px solid #1c1f46;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        .secondicon__main {
+            width: 1450px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end; /* Разница между end и flex-end */
+            align-items: center;
+            column-gap: 40px;
+        }
+
+        .second__logo {
+            width: 300px;
+            height: 100px;
+            background: #1c1f46;
+            border-radius: 25px;
+        }
+
+        .third__logo {
+            width: 250px;
+            height: 60px;
+            background: #1c1f46;
+            border-radius: 25px;
+            margin-top: 40px;
+        }
+
+        .third__text {
+            color: #1c1f46;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-top: 20px;
+        }
+
+        /* second part */
+        .one {
+            background: #ced3d3;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two {
+            background: #1c1f46;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .three {
+            background: #ced3d3;
+            width: 1600px;
+            height: 100px;
+        }
+
+        .oneone {
+            width: 250px;
+            height: 250px;
+            background: #1c1f46;
+            margin: 50px;
+            border-radius: 10%
+        }
+
+        .oneoneborder {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .twotwo {
+            width: 250px;
+            height: 250px;
+            background: #ced3d3;
+            margin: 40px;
+            border-radius: 50%
+        }
+
+        .mainbottom {
+            background: #1c1f46;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mainbottom__one {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .with_border {
+            border: 5px solid #1baaf8;
+        }
+
+        .text {
+            color: white;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .text_bottom {
+            margin-bottom: 50px;
+            color: #1c1f46;
+        }
+
+        .text_one {
+            color: #1c1f46;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-top: 40px;
+        }
+
+        .main_border {
+            width: 1500px;
+            height: 500px;
+            border: 5px solid #05a2f8;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* third part, the biggest) */
+        .three-large-main {
+            width: 1600px;
+            height: 2200px;
+            background: #ced3d3;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .three-large-main__text {
+            color: #1c1f46;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-bottom: 60px;
+        }
+
+        .three-large-main__boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 1500px;
+            height: 1100px;
+            flex-wrap: wrap;
+        / / column-gap: 50 px;
+        }
+
+        .three-large-main__box {
+        / / background: #ced3d3;
+            width: 450px;
+            height: 500px;
+            border: 5px solid #05a2f8;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .three-large-main__box__up {
+            background: #1c1f46;
+            width: 400px;
+            height: 200px;
+            border: 5px solid #1c1f46;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .three-large-main__box__center {
+            width: 400px;
+            height: 30px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .box__main__right {
+            width: 50px;
+            height: 20px;
+            background: #1c1f46;
+            border: 5px solid #1c1f46;
+            border-radius: 7px;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+
+        .box__main__right_main {
+            display: flex;
+            flex-direction: row;
+        / / justify-content: space-between;
+        / / align-items: start;
+        }
+
+        .box__main__right_main2 {
+            width: 400px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .text_in_box_six {
+            color: #1c1f46;
+            font-size: 24px;
+            font-family: Impact Arial sans-serif;
+        / / margin-bottom: 10 px;
+        }
+
+        .three-points {
+            background: #1c1f46;
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+        }
+
+        .three-points__main {
+            width: 450px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 15px;
+            margin-right: 25px;
+        }
+
+        .mini-logo {
+            background: #1c1f46;
+            width: 100px;
+            height: 30px;
+            margin-left: 25px;
+            border-radius: 12px;
+        }
+
+        .bottom_down {
+            width: 450px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 5px solid #05a2f8;
+        }
+
+        .down_box_main {
+        / / background: #1c1f46;
+            width: 1600px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .down_box_main_left {
+            background: #1c1f46;
+            width: 725px;
+            height: 500px;
+            color: #05a2f8;
+            font-size: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .down_box_main_right {
+            background: #05a2f8;
+            width: 725px;
+            height: 500px;
+            color: #1c1f46;
+            font-size: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .down_box_main_left_txt {
+            width: 525px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 75px;
+            margin-left: 50px;
+        }
+
+        .down_box_main_right_txt {
+            width: 525px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 75px;
+            margin-left: 50px;
+        }
+
+        .down_box__text_r {
+            margin-bottom: 15px;
+        }
+
+        .down_box__text {
+            margin-bottom: 15px;
+        }
+
+        .bottom_icon_right {
+            width: 250px;
+            height: 75px;
+            background: #1c1f46;
+            margin-top: 50px;
+            border-radius: 50px;
+        }
+
+        .bottom_icon_left {
+            width: 250px;
+            height: 75px;
+            background: #05a2f8;
+            margin-top: 50px;
+            border-radius: 50px;
+        }
+        .background_bottom {
+            margin-top: 250px;
+            width: 1600px;
+            height: 250px;
+            background: #1c1f46;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .background_bottom_cubes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+        .cube {
+            width: 75px;
+            height: 75px;
+            background: #ced3d3;
+            border-radius: 30%;
+            margin-top: 50px;
+        }
+        .background_bottom_line {
+            margin-top: 50px;
+            width: 800px;
+            height: 10px;
+            background: #05a2f8;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 800px) {
+            .oneoneborder {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+            .one {
+                width: 100%;
+                height: 100%;
+                background: #04efef;
+            }
+            .two {
+                background: #ffffff;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+            .twotwo {
+                background: #04efef;
+            }
+            .main_border {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+            .three {
+                width: 100%;
+                background: #04efef;
+            }
+            .mainbottom {
+                width: 100%;
+            }
+            .oneone {
+                background: #1c1f46;
+                border: 5px solid #05a2f8;
+                box-sizing: border-box;
+            }
+            .first {
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+            }
+            .second {
+                width: 100%;
+                padding: 0;
+                margin-right: 10px;
+            }
+            .third {
+                width: 100%;
+            }
+            .secondicon {
+                width: 100%;
+            }
+            .second__logo {
+                max-width: 300px;
+                width: 100%;
+                margin-right: 10px;
+            }
+            .secondicon__main {
+                //z-index: 3;
+            }
+            .three-large-main {
+                width: 100%;
+                height: 100%;
+                //background: #ced3d3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .three-large-main__boxes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                flex-wrap: nowrap;
+            / / column-gap: 50 px;
+            }
+            .three-large-main__box {
+            / / background: #ced3d3;
+                width: 100%;
+                //height: 500px;
+                //border: 5px solid #05a2f8;
+                //border-radius: 50px;
+                //display: flex;
+                //flex-direction: column;
+                //justify-content: flex-start;
+                //align-items: center;
+            }
+            .down_box_main {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+            .down_box_main_left {
+                width: 100%;
+                height: 100%;
+            }
+            .down_box_main_right {
+                width: 100%;
+                height: 100%;
+            }
+            .bottom_down {
+                width: 100%;
+            }
+            .three-large-main__box__bottom {
+                width: 100%;
+            }
+            .bottom_down {
+                width: 100%;
+                //height: 60px;
+                //display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                //align-items: center;
+                //border-top: 5px solid #05a2f8;
+            }
+            .background_bottom {
+                width: 100%;
+                height: 100%;
+            }
+            .background_bottom_line {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- first part -->
+<div class="first">
+    <div class="firsticon"></div>
+    <div class="firsticon"></div>
+    <div class="firsticon"></div>
+    <div class="firsticon"></div>
+</div>
+<div class="second">
+    <div class="second__logo"></div>
+    <div class="secondicon__main">
+        <div class="secondicon"></div>
+        <div class="secondicon"></div>
+        <div class="secondicon"></div>
+        <div class="secondicon"></div>
+    </div>
+</div>
+<div class="third">
+    <div class="third__text third__text-main"><b>The main text on the center</b></div>
+    <div class="third__text">Second text on the center</div>
+    <div class="third__text">Third text on the center</div>
+    <div class="third__text">The last text on the center</div>
+    <div class="third__logo"></div>
+</div>
+<!-- second part -->
+<div class="classwork_one">
+    <div class="one">
+        <div class="main_border">
+            <div class="text_one">Something</div>
+            <div class="oneoneborder">
+                <div class="mainbottom__one">
+                    <div class="oneone"></div>
+                    <div class="text text_bottom">Something</div>
+                </div>
+                <div class="mainbottom__one">
+                    <div class="oneone"></div>
+                    <div class="text text_bottom">Something</div>
+                </div>
+                <div class="mainbottom__one">
+                    <div class="oneone"></div>
+                    <div class="text text_bottom">Something</div>
+                </div>
+                <div class="mainbottom__one">
+                    <div class="oneone"></div>
+                    <div class="text text_bottom">Something</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="two">
+        <div class="mainbottom">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+        <div class="mainbottom with_border">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+        <div class="mainbottom">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+    </div>
+    <div class="three"></div>
+</div>
+<!-- third part -->
+<div class="three-large-main">
+    <div class="three-large-main__text"><b>Some text right here</b></div>
+
+    <div class="three-large-main__boxes">
+
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three-large-main__box">
+            <div class="three-large-main__box__up"></div>
+            <div class="three-large-main__box__center">
+                <div class="text_in_box_six">Something</div>
+                <div class="box__main__right_main">
+                    <div class="box__main__right"></div>
+                    <div class="box__main__right"></div>
+                </div>
+            </div>
+            <div class="box__main__right_main2">
+                <div class="text_in_box_six">Some words</div>
+                <div class="text_in_box_six">Some words here</div>
+                <div class="text_in_box_six">Some words are always here</div>
+            </div>
+            <div class="three-large-main__box__bottom">
+                <div class="bottom_down">
+                    <div class="mini-logo"></div>
+                    <div class="three-points__main">
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                        <div class="three-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="down_box_main">
+
+        <div class="down_box_main_left">
+            <div class="down_box_main_left_txt">
+                <span class="down_box__text"><b>Text first</b></span>
+                <span class="down_box__text">Text second</span>
+                <span class="down_box__text">Text third</span>
+                <span class="down_box__text">Text fourth</span>
+                <div class="bottom_icon_left"></div>
+            </div>
+        </div>
+
+        <div class="down_box_main_right">
+            <div class="down_box_main_right_txt">
+                <span class="down_box__text_r"><b>Text first</b></span>
+                <span class="down_box__text_r">Text second</span>
+                <span class="down_box__text_r">Text third</span>
+                <span class="down_box__text_r">Text fourth</span>
+                <div class="bottom_icon_right"></div>
+            </div>
+        </div>
+        </div>
+
+    <div class="background_bottom">
+    <div class="background_bottom_cubes">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+    <div class="background_bottom_line"></div>
+    </div>
+    </div>
+</body>
+</html>

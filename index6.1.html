@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport"
+          content="width=device-width"> -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one {
+            background: #ced3d3;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two {
+            background: #1c1f46;
+            width: 1600px;
+            height: 600px;
+            display: flex;
+            //flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .three {
+            background: #ced3d3;
+            width: 1600px;
+            height: 100px;
+        }
+        .oneone {
+            width: 250px;
+            height: 250px;
+            background: #1c1f46;
+            margin: 50px;
+            border-radius: 10%
+        }
+        .oneoneborder {
+            width: auto;
+            height: auto;
+            display: flex;
+            //flex-direction: row;
+            justify-items: center;
+            align-items: center;
+        }
+        .twotwo {
+            width: 250px;
+            height: 250px;
+            background: #ced3d3;
+            margin: 40px;
+            border-radius: 50%
+        }
+        .mainbottom {
+            background: #1c1f46;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .mainbottom__one {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .with_border {
+            border: 5px solid #1baaf8;
+        }
+        .text {
+            color: white;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-bottom: 10px;
+        }
+        .text_bottom{
+            margin-bottom: 50px;
+            color: #1c1f46;
+        }
+        .text_one {
+            color: #1c1f46;
+            font-size: 32px;
+            font-family: Impact Arial sans-serif;
+            margin-top: 40px;
+        }
+        .main_border {
+            width: 1500px;
+            height: 500px;
+            border: 5px solid #05a2f8;
+            border-radius: 40px;
+            //border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 800px) {
+        .oneoneborder {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+            .one {
+                width: 100%;
+                height: 100%;
+                background: #04efef;
+            }
+            .two {
+                background: #ffffff;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+            .twotwo {
+                background: #04efef;
+            }
+            .main_border {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+            .three {
+                width: 100%;
+                background: #04efef;
+            }
+            .mainbottom {
+                width: 100%;
+            }
+            .oneone {
+                background: #1c1f46;
+                border: 5px solid #05a2f8;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="main_border">
+        <div class="text_one">Something</div>
+        <div class="oneoneborder">
+            <div class="mainbottom__one">
+                <div class="oneone"></div>
+                <div class="text text_bottom">Something</div>
+            </div>
+            <div class="mainbottom__one">
+                <div class="oneone"></div>
+                <div class="text text_bottom">Something</div>
+            </div>
+            <div class="mainbottom__one">
+                <div class="oneone"></div>
+                <div class="text text_bottom">Something</div>
+            </div>
+            <div class="mainbottom__one">
+                <div class="oneone"></div>
+                <div class="text text_bottom">Something</div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="mainbottom">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+
+        <div class="mainbottom with_border">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+
+        <div class="mainbottom">
+            <div class="twotwo"></div>
+            <div class="text">Something</div>
+            <div class="text">Something else</div>
+        </div>
+    </div>
+    <div class="three"></div>
+</body>
+</html>
